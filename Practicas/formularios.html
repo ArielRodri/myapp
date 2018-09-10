@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Prueba de Formulario n.n</title>
+		<title>Prueba de formularios n.n</title>
 	</head>
 <body>
 	<form action="Formulario.thml" method="post">
@@ -17,6 +17,36 @@
 	<br>
 		Ingrese su Descripccion :
 		<textarea name="descripcion"></textarea>
+	<br>
+
+		Seleccione los lenguajes que conoce:
+	<br>
+		<input type="checkbox" name="java">Java<br>
+		<input type="checkbox" name="C++">C++<br>
+		<input type="checkbox" name="C">C<br>
+		<input type="checkbox" name="ruby">Ruby<br>
+
+
+		Seleccione el maximo nivel de estudios que tiene:
+	<br>
+		<input type="radio" name="estudios" value="1">sin estudios <br>
+		<input type="radio" name="estudios" value="2">Primaria<br>
+		<input type="radio" name="estudios" value="3">Secundaria<br>
+		<input type="radio" name="estudios" value="4">Universitario<br>
+
+		Seleccione uno o varios colores (Presiones Ctrl para seleccionar varios colores)<br>
+	<select name="colores[]" size="8" multiple>
+		<option value="1">Rojo</option>
+		<option value="2">Verde</option>
+		<option value="3">Azul</option>
+		<option value="4">Amarillo</option>
+		<option value="5">Blanco</option>
+		<option value="6">Negro</option>
+		<option value="7">Naranja</option>
+		<option value="8">Violeta</option>
+	</select>	
+
+
 	<br>
 
 		<input type="submit" value="Ok">
